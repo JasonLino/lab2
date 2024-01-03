@@ -67,7 +67,17 @@
             margin: 0;
             line-height: 1.5;
             color:bisque;
+            padding: 9px;
 
+        }
+
+        ul {
+            font-size: 20px;
+            margin: 0;
+            line-height: 1.5;
+            color:bisque;
+            padding: 6px; 
+            margin-bottom: 16px;
         }
 
         #section {
@@ -81,6 +91,41 @@
             margin-top: 3rem;
         }
 
+        #Infos {
+            background: rgb(48, 48, 48);
+        }
+
+        #doggos {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(41, 41, 41);
+            margin: 0rem;
+            padding: 2rem;
+            align-items: center;
+        }
+
+        #image-track > .image {
+            width: 30vmin;
+            height: 46vmin;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #image-track {
+            display: flex;
+            gap: 5.5vmin;
+            left: 50%; right: 50%;
+        }
+
+        #DogsIntro {
+            display:block;
+            text-align: center;
+            color:bisque;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+
     </style>
 </head>
 <body>
@@ -93,23 +138,22 @@
     <section>
         <img src="./images/mew.gif" alt="Myew">
         <h2>About Me</h2>
-        <p>I'm a second-year college student in Asia Pacific College.<br>
+        <div id="Infos"><p>I'm a second-year college student in Asia Pacific College.<br>
             I spend my time finding happiness in exploring novel ideas and perspectives,
             I consistently strive to approach each challenge with innovative insights.
             I have a passion for connecting with people, and I always try to give out
             an encouraging and collaborative spirit in every environment I encounter.
-        </p>
+        </p></div>
         <h2>More about me!</h2>
-        <p>
-            I was born on April 10, 1999 which makes me <strong>24</strong> years old! <br>
-            I like going on walks, working out, and absolutely love playing videogames!
-            I mostly play <strong><em>Dota 2</em></strong>, <strong><em>Valorant</em></strong>,
+        
+        <div><ul>
+            <li>I was born on April 10, 1999 which makes me <strong>24</strong> years old!
+            <li>I like going on walks, working out, and absolutely love playing videogames!
+            <li>I mostly play <strong><em>Dota 2</em></strong>, <strong><em>Valorant</em></strong>,
             but I enjoy all sorts of genres!! <br>
-            Oh, and I suuuper suuper super love MEW! <3
-
-
-
-        </p>
+            <li>Oh, and I suuuper duuper love MEW!
+            
+        </ul></div>
 
         <p id="quote">“<em>You are what you believe yourself to be</em>.”  -Paulo Coelho
 
@@ -119,6 +163,21 @@
         <p>Email: jglino@student.apc.edu.ph</p>
         <p>GitHub: github.com/JasonLino</p>
     </section>
+
+    <hp id="DogsIntro"> Here are some extra pictures of my dogs Barry, Riley, and our newest addition Kiri!</p>
+            
+        <div id="doggos">
+
+        <div id="image-track">
+
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (7).png" />
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (8).png" />
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (9).png" />
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (10).png" />
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (13).png" />
+            <img class="image" src="C:\Users\jason\lab2\week3.1\images\MicrosoftTeams-image (14).png" />
+            </div>
+        </div>
 
 </body>
 </html>
