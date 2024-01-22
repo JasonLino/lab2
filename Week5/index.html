@@ -15,9 +15,11 @@
         header {
             background-color: rgb(15, 15, 15);
             color: #ffffff;
-            padding: 16em 0;
             text-align: center;
-            
+            display: grid;
+            place-items: center;
+            height: 100dvh; 
+
         }
 
         header h1 {
@@ -98,9 +100,9 @@
 
         #doggos {
             height: 100%;
-            width: 70%;
+            width: 90%;
             background-color: rgb(41, 41, 41);
-            margin: 0rem;
+            margin: 0 auto;
             padding: 2rem;
             align-items: center;
         }
@@ -116,6 +118,7 @@
             display: flex;
             gap: 5.5vmin;
             left: 50%; right: 50%;
+            overflow-x: scroll;
         }
 
         #DogsIntro {
@@ -146,8 +149,10 @@
 <body>
 
     <header>
-        <h1>Yes, I am Jason </h1>
-        <p id="section">A BS-IT Student in Asia Pacific College</p>
+        <div class="container">
+            <h1>Yes, I am Jason </h1>
+            <p id="section">A BS-IT Student in Asia Pacific College</p>
+        </div>
     </header>
 
     <section>
@@ -196,7 +201,7 @@
       </div>
     </section>
 
-    <hp id="DogsIntro"> Here are some bonus pictures of my dogs Barry, Riley, and our newest addition Kiri!</p>
+    <p id="DogsIntro"> Here are some bonus pictures of my dogs Barry, Riley, and our newest addition Kiri!</p>
             
         <div id="doggos">
 
