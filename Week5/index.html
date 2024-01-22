@@ -201,7 +201,7 @@
       </div>
     </section>
 
-    <p id="DogsIntro"> Here are some bonus pictures of my dogs Barry, Riley, and our newest addition Kiri!</p>
+    <p id="DogsIntro"> Here are some bonus pictures of my dogs <span class="dog1name"></span>, Riley, and our newest addition Kiri!</p>
             
         <div id="doggos">
 
@@ -230,7 +230,7 @@
     const dog3 = new Dog(true,"Kiri","Ombre",1)
 
     function showDog() {
-        console.log(dog1.name)
+        document.querySelector(".dog1name").innerHTML=dog1.name
     }
     showDog()
 </script>
