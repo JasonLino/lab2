@@ -218,6 +218,12 @@
 
 <?php
 $callsign = "Jason";
+
+echo "<p>PHP is Very Fun!</p>";
+echo "<p>Hey Everyone!!</p><br>";
+echo "<p>Taking my time to learn PHP!!!</p><br>";
+echo "<p>Never ", "gonna ", "give ", "you ", "up 8) </p>";
+
 ?>
 
 
