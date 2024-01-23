@@ -218,11 +218,12 @@
 
 <?php
 
-$supercars = array("Bugatti","Ferrari","Lamborghini");
+$a = 10;
+$b = 18;
+$sum = $a + $b;
+
 
 ?>
-
-
 
 </body>
 </html>
