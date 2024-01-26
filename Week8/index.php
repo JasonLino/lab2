@@ -142,6 +142,9 @@
             height: 2rem;
             width: auto;
         }
+        .error {
+          color: bisque;
+        }
 
 
     </style>
@@ -275,38 +278,37 @@ function test_input($data) {
 
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+  <p>Name: <input type="text" name="name" value="<?php echo $name;?>"> <span class="error">* <?php echo $nameErr;?></span></p>
   <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
+  <p>E-mail: <input type="text" name="email" value="<?php echo $email;?>"> <span class="error">* <?php echo $emailErr;?></span></p>
   <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
+  <p>Website: <input type="text" name="website" value="<?php echo $website;?>"> <span class="error"><?php echo $websiteErr;?></span></p>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <p>Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea></p>
   <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-  <span class="error">* <?php echo $genderErr;?></span>
+  <p>Gender: <span class="error">* <?php echo $genderErr;?></span></p>
+  <p><input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female</p>
+  <p><input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male</p>
+  <p><input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other</p>
+  
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <h2><input type="submit" name="submit" value="Submit"></h2>
 </form>
 
 <?php
-echo "<h2>Your Input:</h2>";
-echo $name;
+echo "<div style='font-size: 20px;'>";
+echo "<p>Your Input:</p>";
+echo "<p style='font-size: 1.2em;'>Name: $name</p>";
 echo "<br>";
-echo $email;
+echo "<p style='font-size: 1.2em;'>Email: $email</p>";
 echo "<br>";
-echo $website;
+echo "<p style='font-size: 1.2em;'>Website: $website</p>";
 echo "<br>";
-echo $comment;
+echo "<p style='font-size: 1.2em;'>Comment: $comment</p>";
 echo "<br>";
-echo $gender;
+echo "<p style='font-size: 1.2em;'>Gender: $gender</p>";
+echo "</div>";
 ?>
 
 </body>
