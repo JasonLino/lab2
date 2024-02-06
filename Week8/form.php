@@ -100,5 +100,19 @@ echo "<br>";
 echo $gender;
 ?>
 
+// For xampp
+<?php
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "myDB";  
+  
+// For socitcloud
+$servername = "localhost";
+$username = "webprogmi222_sf221";
+$password = "xE*Y2nleNVvZm[!!";
+$dbname = "webprogmi222_sf221";
+?>
+
 </body>
 </html>
